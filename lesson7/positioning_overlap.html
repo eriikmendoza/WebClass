@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      *{box-sizing: border-box;}
+      body{
+        text-align: center;
+      }
+      p{
+        font-size: 30px;
+        padding-top: 30px;
+      }
+
+      .container{
+        position: relative;
+        background-color: pink;
+        border: 5px solid green;
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+      }
+      .box{
+        position: absolute;;
+        width: 200px;
+        height: 160px;
+      }
+
+      .box1{
+        background-color: yellow;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+      }
+      .box2{
+        background-color: lightblue;
+        top: 120px;
+        left: 150px;
+        z-index: 2;
+      }
+      .box3{
+        background-color: lightgreen;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Positioning and overlap</h1>
+    <div class="container">
+      <div class="box box1">
+        <p>Box 1</p>
+      </div>
+      <div class="box box2">
+        <p>Box 2</p>
+      </div>
+      <div class="box box3">
+        <p>Box 3</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

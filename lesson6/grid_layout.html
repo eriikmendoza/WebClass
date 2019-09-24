@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Layout</title>
+    <style type="text/css">
+      body{
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      /*
+      .grid-container{
+        background-color: lightgreen;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap:20px;
+      }
+      */
+      .grid-container{
+        background-color: lightgreen;
+        display: grid;
+        grid-template-columns: 20% 30% 40%;
+        --grid-column-gap: 20px;
+        grid-row-gap:20px;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .grid-item{
+        height: 100px;
+        background-color: yellow;
+        border: 2px solid grey;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Grid Layout</h1>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function turnOn(){
+        document.getElementById("bulb").src = "../images/bulb_on.gif";
+      }
+      function turnOff(){
+        document.getElementById("bulb").src = "../images/bulb_off.gif";
+      }
+
+    </script>
+    <style type="text/css">
+
+        body{
+          width: 80%;
+          margin: 0 auto;
+        }
+        img{
+          display: block;
+          margin: 10px 0 10px 60px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>Change Element Attribute </h1>
+    <img id="bulb" src="../images/bulb_off.gif" alt="light bulb">
+    <button type="button" onclick="turnOn()">turn on the light</button>
+    <button type="button" onclick="turnOff()">Turn off the light</button>
+
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      body{
+        width: 80%;
+        font-size: 30px;
+        font-family: sans-serif;
+        background: lightblue;
+        margin: 0 auto;
+      }
+      p{
+        padding: 20px;
+      }
+      h1{
+        font-size: 1.5em;
+      }
+      @media only screen and (max-width: 1000px){
+        body{
+          background-color: pink;
+          font-size: 24px;
+        }
+      }
+      @media only screen and (max-width: 600px){
+        body{
+          background-color: yellow;
+          font-size: 20px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Responsive background</h1>
+    <p>0-600px: yellow, 20 px</p>
+    <p>601-1000px: pink, 24px</p>
+    <p>1000px-: lightblue, 30 px</p>
+  </body>
+</html>

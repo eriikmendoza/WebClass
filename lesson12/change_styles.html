@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function changeTextStyle(){
+        var elmt = document.getElementById("text");
+        elmt.style.fontSize = "30px";
+        elmt.style.fontWeight = "bold";
+      }
+      function changeBoxStyle(){
+        var elmt = document.getElementById("box");
+        elmt.style.width = "300px";
+        elmt.style.height = "150px";
+        elmt.style.border = "5px solid green";
+        elmt.style.backgroundColor = "yellow";
+      }
+    </script>
+    <style>
+        body{
+          width: 80%;
+          margin: 0 auto;
+        }
+        #box{
+          background-color: blue;
+          width: 200px;
+          height: 100px;
+          margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Change Styles</h1>
+    <p id="text">JavaScript can change the styles of a HTML element.</p>
+    <div id="box"></div>
+    <button type="button" onclick="changeTextStyle()">Change Text Style</button>
+    <button type="button" onclick="changeBoxStyle()">Change Box Styles</button>
+
+  </body>
+</html>
